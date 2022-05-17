@@ -189,7 +189,7 @@ body {
     flex-direction: column; */
   }
   .direction {
-    margin-top: 0;
+    margin-top: 50px;
     gap: 3rem;
   }
   .github-image svg {

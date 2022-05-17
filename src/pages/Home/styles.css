@@ -24,35 +24,9 @@ body {
 
 */
 
-.home-container .btn-theme {
-  align-items: center;
+.home-container .btn {
   display: flex;
-  width: 100%;
   justify-content: flex-end;
-}
-
-.home-container .btn-theme  button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  border: none;
-  background-color: var(--gray-white);
-  margin: 50px 20px 0px 0px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 200ms ease-in-out;
-}
-
-
-.home-container .btn-theme  button:hover {
-  background-color: var(--hover-theme);
-}
-
-.home-container .btn-theme  button svg {
-  font-size: 32px;
-  color: var(--text-primary);
 }
 
 

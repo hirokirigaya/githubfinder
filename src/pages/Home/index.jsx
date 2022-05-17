@@ -9,7 +9,7 @@ import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi'
 function index({ toggleTheme, theme }) {
   return (
     <section className="home-container">
-      <div className="btn-theme">
+      <div className="btn">
         <BtnTheme
           toggleTheme={toggleTheme}
           theme={theme === 'dark' ? <Sun /> : <Moon />}

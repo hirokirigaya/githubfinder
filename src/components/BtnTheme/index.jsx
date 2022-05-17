@@ -1,9 +1,10 @@
 import React from 'react'
 
+import './styles.css'
 
 function index(props) {
   return (
-    <button onClick={props.toggleTheme}>{props.theme}</button>
+    <button onClick={props.toggleTheme} className="btn-theme">{props.theme}</button>
   )
 }
 

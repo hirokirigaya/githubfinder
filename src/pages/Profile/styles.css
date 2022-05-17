@@ -1,4 +1,21 @@
 .profile-container {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
 }
+
+
+/*
+
+    
+      S e c t i o n     T h e m e
+
+
+*/
+
+.profile-container .buttons {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+

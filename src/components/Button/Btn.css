@@ -1,0 +1,23 @@
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: var(--gray-white);
+  margin: 50px 0px 0px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+
+.btn-back:hover {
+  background-color: var(--hover-theme);
+}
+
+.btn-back svg {
+  font-size: 32px;
+  color: var(--text-primary);
+}

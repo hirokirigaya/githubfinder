@@ -5,6 +5,7 @@ body {
 
 .home-container {
   max-width: 375px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -133,18 +134,3 @@ body {
 
 
 */
-
-.github-image {
-  margin-top: 33px;
-  width: 375px;
-  height: 400px;
-  position: relative;
-}
-
-.github-image svg {
-  width: 400px;
-  height: 400px;
-  left: 40%;
-  bottom: 0;
-  position: absolute;
-}

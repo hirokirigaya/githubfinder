@@ -31,7 +31,6 @@ function index({ toggleTheme, theme }) {
           </div>
         </div>
         <div className="github-image">
-          <Github />
         </div>
       </div>
     </section>

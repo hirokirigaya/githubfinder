@@ -4,9 +4,14 @@ body {
 }
 
 .home-container {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(3, 1fr);
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.direction {
+  margin-top: 136px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -19,7 +24,6 @@ body {
 */
 
 .home-container .btn-theme {
-  grid-column: 1/4;
   align-items: center;
   display: flex;
   width: 100%;
@@ -63,8 +67,6 @@ body {
 .container-finder {
   max-width: 375px;
   margin: 0 auto;
-  grid-row: 3/3;
-  grid-column: 1/4;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -133,14 +135,16 @@ body {
 */
 
 .github-image {
-  grid-row: 4/4;
+  margin-top: 33px;
+  width: 375px;
+  height: 400px;
   position: relative;
-
 }
 
 .github-image svg {
-  top: 70%;
-  left: 80%;
   width: 400px;
+  height: 400px;
+  left: 40%;
+  bottom: 0;
   position: absolute;
 }

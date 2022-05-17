@@ -71,17 +71,18 @@ body {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 
 .container-finder .title {
   display: flex;
-  gap: .8rem;
+  gap: 4rem;
   flex-direction: column;
 }
 
 .container-finder .title h1{
   font-size: 36px;
+  font-weight: 400;
   color: var(--text-primary);
 }
 
@@ -143,4 +144,65 @@ body {
   font-size: 415px;
   margin: 3rem 0 0 12rem;
   color: var(--text-primary);
+}
+
+
+/*
+
+
+  R e s p o n s i v e
+
+
+*/
+
+
+@media(min-width: 600px) {
+  .github-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .github-image svg{
+    overflow: hidden;
+    font-size: 415px;
+    margin: 3rem 20px 0 12rem;
+    color: var(--text-primary);
+  }
+}
+
+@media(min-width: 1024px) {
+  .direction {
+    align-items: center;
+    flex-direction: row;
+  }
+  .github-image svg {
+    font-size: 500px;
+  }
+}
+
+@media(min-width: 1280px) {
+  .home-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .direction {
+    margin-top: 0;
+    gap: 3rem;
+  }
+  .github-image svg {
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    font-size: 630px;
+  }
+  .container-finder .finder input {
+    width: 300px;
+    height: 50px;
+  }
+  .container-finder .finder button {
+    width: 150px;
+    height: 50px;
+  }
 }

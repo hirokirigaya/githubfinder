@@ -134,3 +134,9 @@ body {
 
 
 */
+
+.github-image svg{
+  font-size: 400px;
+  margin: 3rem 0 0 12rem;
+  color: var(--text-primary);
+}

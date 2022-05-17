@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 
 import BtnTheme from '../../components/BtnTheme'
-import Github from '../../components/Images/Github'
+import {FaGithub as Github} from 'react-icons/fa'
 
 import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi'
 
@@ -31,6 +31,7 @@ function index({ toggleTheme, theme }) {
           </div>
         </div>
         <div className="github-image">
+          <Github/>
         </div>
       </div>
     </section>

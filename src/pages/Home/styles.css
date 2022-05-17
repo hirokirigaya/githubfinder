@@ -134,8 +134,11 @@ body {
 
 
 */
-
+.github-image {
+  overflow: hidden;
+}
 .github-image svg{
+  overflow: hidden;
   font-size: 400px;
   margin: 3rem 0 0 12rem;
   color: var(--text-primary);

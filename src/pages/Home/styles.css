@@ -1,0 +1,146 @@
+
+body {
+  overflow-x: hidden;
+}
+
+.home-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+}
+
+
+/*
+
+    
+      S e c t i o n     T h e m e
+
+
+*/
+
+.home-container .btn-theme {
+  grid-column: 1/4;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.home-container .btn-theme  button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: var(--gray-white);
+  margin: 50px 20px 0px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+
+.home-container .btn-theme  button:hover {
+  background-color: var(--hover-theme);
+}
+
+.home-container .btn-theme  button svg {
+  font-size: 32px;
+  color: var(--text-primary);
+}
+
+
+/*
+
+    
+      S e c t i o n    F  i n d e r
+
+
+*/
+
+
+.container-finder {
+  max-width: 375px;
+  margin: 0 auto;
+  grid-row: 3/3;
+  grid-column: 1/4;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-finder .title {
+  display: flex;
+  gap: .8rem;
+  flex-direction: column;
+}
+
+.container-finder .title h1{
+  font-size: 36px;
+  color: var(--text-primary);
+}
+
+.container-finder .title p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.container-finder .title p span{
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+
+.container-finder .finder {
+  display: flex;
+  align-items: center;
+}
+.container-finder .finder input {
+  margin-right: 10px;
+  outline: none;
+  background-color: var(--input);
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 220px;
+  height: 50px;
+}
+.container-finder .finder button {
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg-btn);
+  color: var(--background);
+  transition: 200ms ease-in-out;
+} 
+
+.container-finder .finder button:hover {
+  background-color: var(--hover-btn);
+}
+/*
+
+    
+      S e c t i o n    I m a g e      G i t H u b
+
+
+*/
+
+.github-image {
+  grid-row: 4/4;
+  position: relative;
+
+}
+
+.github-image svg {
+  top: 70%;
+  left: 80%;
+  width: 400px;
+  position: absolute;
+}

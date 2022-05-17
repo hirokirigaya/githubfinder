@@ -1,0 +1,68 @@
+
+/*
+
+
+      Variables theme
+
+
+*/
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Inter', sans-serif;
+  --background: #fff;
+  --text-primary: #1D2024;
+  --text-secondary: #006DFF;
+  --bg-btn: #1D2024;
+  --hover-btn: #2e3238;
+  --gray-white: #ECECEC;
+  --hover-theme: #dadada;
+  --input: #ECECEC;
+}
+
+[data-theme='dark'] {
+  --background: #1D2024;
+  --text-primary: #fff;
+  --text-secondary: #006DFF;
+  --bg-btn: #fff;
+  --hover-btn: rgb(226, 226, 226);
+  --gray-white: #262A2F;
+  --hover-theme: #31363d;
+  --input: #ECECEC;
+}
+
+/*
+
+
+      Reset Global css
+
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, input, button {
+  font-size: 1.4rem;
+}
+
+
+/*
+
+    O v e r f l o w
+
+
+*/
+

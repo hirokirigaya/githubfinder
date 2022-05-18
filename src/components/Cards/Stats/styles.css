@@ -1,0 +1,39 @@
+.profile-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: 3px solid var(--gray-white);
+  padding: 5rem 3rem 3rem 3rem;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.profile-stats .data {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.profile-stats .link-profile {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 10px;
+}
+.profile-stats .user-name {
+  margin: 5px 0;
+  font-size: 32px;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.profile-stats .bio,
+.profile-stats .followers,
+.profile-stats .following,
+.profile-stats .created {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.profile-stats .stats {
+  margin-top: 20px;
+}

@@ -1,0 +1,38 @@
+.repositories-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: 3px solid var(--gray-white);
+  padding: 5rem 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.repositories-container .title {
+  font-size: 32px;
+  margin-bottom: 36px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.repositories-container .repository {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--gray-white);
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.repositories-container .repository p {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.repositories-container .repository a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}

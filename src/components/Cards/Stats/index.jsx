@@ -1,21 +1,29 @@
-import "./styles.css"
+import './styles.css'
 
+function index({ user }) {
 
-function index() {
+  const created = new Date(user?.created_at)
+  const date = created.toLocaleString()
+
   return (
-    <section className='profile-stats'>
-      <div className="data">
-        <a href={`https://github.com/hirokirgaya`} className="link-profile">github.com/hirokirigaya</a>
-        <h1 className='user-name'>Daniel Junio</h1>
-        <p className='bio'>Estudante de desenvolvimento front end</p>
-        <p className='followers'>Followers: 5</p>
-        <p className='following'>Following: 3</p>
-        <p className='created'> Created: Mon Jan 17 2022</p>
-      </div>
-      <div className="stats">
-        {/* off, need apply*/}
-        <img src="" alt="stats-user" />
-      </div>
+    <section className="profile-stats">
+      {user !== undefined && (
+        <div className="data">
+          <a href={`${user.html_url}`} className="link-profile" target="_blank">
+            {`github.com/${user.login}`}
+          </a>
+          <h1 className="user-name">{user.name}</h1>
+          <p className="bio">{user.bio}</p>
+          <p className="followers">Followers: {user.followers}</p>
+          <p className="following">Following: {user.following}</p>
+          <p className="created"> Created: {date}</p>
+        </div>
+      )}
+      {user !== undefined && (
+        <div className="stats">
+          <img src={`https://github-readme-stats.vercel.app/api?username=${user.login}&show_icons=true&theme=graywhite&include_all_commits=true&count_private=true`} alt="stats-user" />
+        </div>
+      )}
     </section>
   )
 }

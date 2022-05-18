@@ -17,6 +17,7 @@
 }
 
 .repositories-container .repository {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   border: 3px solid var(--gray-white);

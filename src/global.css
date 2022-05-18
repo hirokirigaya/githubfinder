@@ -14,6 +14,7 @@
   --text-primary: #1D2024;
   --text-secondary: #006DFF;
   --bg-btn: #1D2024;
+  --bg-loader: rgb(209, 209, 209);
   --hover-btn: #2e3238;
   --gray-white: #ECECEC;
   --hover-theme: #dadada;
@@ -25,6 +26,7 @@
   --text-primary: #fff;
   --text-secondary: #006DFF;
   --bg-btn: #fff;
+  --bg-loader: #fff;
   --hover-btn: rgb(226, 226, 226);
   --gray-white: #262A2F;
   --hover-theme: #31363d;

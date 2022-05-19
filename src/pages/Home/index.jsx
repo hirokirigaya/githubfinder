@@ -11,15 +11,16 @@ import BtnTheme from '../../components/BtnTheme'
 function index({ toggleTheme, theme }) {
 
   const [user, setUser]  = useState('')
-  const [enter, setEnter] = useState()
-  const find = () => {
-    if(enter === 'Enter') {
-      window.location.href = `/profile/${user}`
-    }
-  }
+  // const [enter, setEnter] = useState()
+  // const find = () => {
+  //   if(enter === 'Enter') {
+  //     window.location.href = `/profile/${user}`
+  //   }
+  // }
 
   return (
-    <section className="home-container" onKeyUp={find}>
+    // add onKeyUp={find} in section
+    <section className="home-container">
       <div className="btn">
         <BtnTheme
           toggleTheme={toggleTheme}
@@ -40,7 +41,7 @@ function index({ toggleTheme, theme }) {
             <input
               type="text"
               placeholder="hirokirigaya"
-              onKeyUpCapture={e => setEnter(e.code)}
+              // onKeyUpCapture={e => setEnter(e.code)}
               onChange={e => {
                 setUser(e.target.value)}}
             />

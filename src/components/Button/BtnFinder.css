@@ -1,0 +1,16 @@
+.finder-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--bg-btn);
+  color: var(--background);
+  border: none;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.finder-btn:hover {
+  background-color: var(--hover-btn);
+}

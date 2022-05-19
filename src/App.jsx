@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import Home from './pages/Home'
 import Profile from './pages/Profile'
+import UserDontExist from './pages/UserDontExist'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home toggleTheme={toggleTheme} theme={theme}/>}/>
           <Route path={`/profile/:user`} element={<Profile toggleTheme={toggleTheme} theme={theme}/>}/>
+          <Route path={`/notexist`} element={<UserDontExist toggleTheme={toggleTheme} theme={theme}/>}/>
         </Routes>
       </Router>
     </Container>

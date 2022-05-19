@@ -37,3 +37,9 @@
   font-weight: 400;
   color: var(--text-secondary);
 }
+
+@media(min-width: 1280px) {
+  .repositories-container {
+    width: 100%;
+  }
+}

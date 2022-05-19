@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './styles.css'
 
 import BtnTheme from '../../components/BtnTheme'
-import {FaGithub as Github} from 'react-icons/fa'
-
+import { FaGithub as Github } from 'react-icons/fa'
 import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi'
 
+import { Link } from 'react-router-dom'
+
 function index({ toggleTheme, theme }) {
+  const [user, setUser] = useState('')
+  console.log(user)
   return (
     <section className="home-container">
       <div className="btn">
@@ -26,12 +29,20 @@ function index({ toggleTheme, theme }) {
             </p>
           </div>
           <div className="finder">
-            <input type="text" placeholder="hirokirigaya" />
-            <button>FIND</button>
+            <input
+              type="text"
+              placeholder="hirokirigaya"
+              onChange={(e) => {
+                setUser(e.target.value)
+              }}
+            />
+            <Link to={`/profile/${user}`}>
+              <button>FIND</button>
+            </Link>
           </div>
         </div>
         <div className="github-image">
-          <Github/>
+          <Github />
         </div>
       </div>
     </section>

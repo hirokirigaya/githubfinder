@@ -48,7 +48,7 @@ function index({ toggleTheme, theme }) {
         {loading === false ? (
           <div className="data-container">
             <Profile user={user} />
-            <div>
+            <div className='stats-repo'>
               <Stats user={user} />
               <Repositories user={user} />
             </div>

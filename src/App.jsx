@@ -26,7 +26,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home toggleTheme={toggleTheme} theme={theme}/>}/>
           <Route path={`/profile/:user`} element={<Profile toggleTheme={toggleTheme} theme={theme}/>}/>
-          <Route path={`/notexist`} element={<UserDontExist toggleTheme={toggleTheme} theme={theme}/>}/>
         </Routes>
       </Router>
     </Container>

@@ -1,30 +1,43 @@
-import './styles.css'
+import "./styles.css";
 
-//icons
-import { FaGithub as Github } from 'react-icons/fa'
-import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi'
+import { FaGithub as Github } from "react-icons/fa";
+import { FiMoon as Moon, FiSun as Sun } from "react-icons/fi";
+import { toast } from 'react-toastify'
 
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
-import BtnTheme from '../../components/BtnTheme'
+import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import BtnTheme from "../../components/BtnTheme";
 
 function index({ toggleTheme, theme }) {
+  const [user, setUser] = useState("");
+  const navigate = useNavigate();
 
-  const [user, setUser]  = useState('')
-  // const [enter, setEnter] = useState()
-  // const find = () => {
-  //   if(enter === 'Enter') {
-  //     window.location.href = `/profile/${user}`
-  //   }
-  // }
+  const findUserOnKeyEnter = (key) => {
+    if (user?.trim() === "") {
+      toast.error("Please enter a username to search")
+      return;
+    };
+
+    if (key === "Enter") {
+      return navigate(`/profile/${user}`);
+    }
+  };
+
+  const findUser = () => {
+    if (user?.trim() === "") {
+      toast.error("Please enter a username to search")
+      return;
+    };
+
+    return navigate(`/profile/${user}`);
+  };
 
   return (
-    // add onKeyUp={find} in section
     <section className="home-container">
       <div className="btn">
         <BtnTheme
           toggleTheme={toggleTheme}
-          theme={theme === 'dark' ? <Sun /> : <Moon />}
+          theme={theme === "dark" ? <Sun /> : <Moon />}
         />
       </div>
       <div className="direction">
@@ -37,17 +50,20 @@ function index({ toggleTheme, theme }) {
               github.com/<span>hirokirigaya</span>
             </p>
           </div>
-          <div className="finder">
-            <input
-              type="text"
-              placeholder="hirokirigaya"
-              // onKeyUpCapture={e => setEnter(e.code)}
-              onChange={e => {
-                setUser(e.target.value)}}
-            />
-            <Link to={`/profile/${user}`} >
-              <button>FIND</button>
-            </Link>
+          <div className="box-finder">
+            <div className="finder">
+              <input
+                type="text"
+                placeholder="hirokirigaya"
+                onKeyUpCapture={(e) => findUserOnKeyEnter(e.code)}
+                onChange={(e) => {
+                  setUser(e.target.value);
+                }}
+                value={user}
+              />
+
+              <button onClick={findUser}>FIND</button>
+            </div>
           </div>
         </div>
         <div className="github-image">
@@ -55,7 +71,7 @@ function index({ toggleTheme, theme }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default index
+export default index;

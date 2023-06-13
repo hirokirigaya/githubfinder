@@ -76,6 +76,12 @@ body {
   display: flex;
   align-items: center;
 }
+
+.container-finder .box-finder {
+  display: flex;
+  flex-direction: column;
+}
+
 .container-finder .finder input {
   margin-right: 10px;
   outline: none;

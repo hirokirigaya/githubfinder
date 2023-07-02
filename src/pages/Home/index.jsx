@@ -13,7 +13,7 @@ function index({ toggleTheme, theme }) {
   const navigate = useNavigate();
 
   const findUserOnKeyEnter = (key) => {
-    if (user?.trim() === "") {
+    if (user?.trim() === "" && key === "Enter") {
       toast.error("Please enter a username to search")
       return;
     };
